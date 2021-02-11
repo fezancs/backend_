@@ -3,4 +3,4 @@ WORKDIR /usr/src/app
 COPY . .
 RUN npm install
 EXPOSE 3000
-CMD npm start 
+CMD node ./bin/www --host 0.0.0.0
